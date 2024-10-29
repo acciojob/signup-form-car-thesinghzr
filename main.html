@@ -1,16 +1,136 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
 
+    form {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        margin: auto;
+    }
+
+    label {
+        display: block;
+        margin: 5px 0 2px;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="password"],
+    select {
+        width: 100%;
+        padding: 6px;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .gender-group {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    input[type="radio"] {
+        margin: 0 5px;
+    }
+
+    .tos {
+        display: inline-flex; 
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        padding: 6px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #4cae4c;
+    }
+
+    select {
+        background-color: #f9f9f9;
+    }
+</style>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <form>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Name" required> <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" required> <br>
+
+        <div class="gender-group">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div><br>
+
+        <label for="car">Car Brands</label>
+        <select id="car" name="car">
+            <option value="" selected>--Please choose an option--</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">F</option>
+        </select><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="age" required> <br>
+
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="tele">Phone Number</label>
+        <input type="tel" id="tele" name="tele" placeholder="xxx:xxx:xxx"><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required><br>
+
+        <div class="tos">
+            <input type="checkbox" id="tos" name="tos" required>
+            <label for="tos">I agree to the TOS</label>
+        </div><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
 
 </body>
-
 </html>
