@@ -7,80 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 20px;
-    }
 
-    form {
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        max-width: 300px;
-        margin: auto;
-    }
-
-    label {
-        display: block;
-        margin: 5px 0 2px;
-        font-size: 14px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="number"],
-    input[type="date"],
-    input[type="tel"],
-    input[type="password"],
-    select {
-        width: 100%;
-        padding: 6px;
-        margin-bottom: 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        font-size: 14px;
-    }
-
-    .gender-group {
-        display: inline-flex;
-        align-items: center;
-        margin-top: 5px;
-    }
-
-    input[type="radio"] {
-        margin: 0 5px;
-    }
-
-    .tos {
-        display: inline-flex; 
-        align-items: center;
-        margin-top: 5px;
-    }
-
-    input[type="submit"] {
-        background-color: #5cb85c;
-        color: white;
-        border: none;
-        padding: 6px;
-        border-radius: 4px;
-        cursor: pointer;
-        width: 100%;
-        font-size: 14px;
-    }
-
-    input[type="submit"]:hover {
-        background-color: #4cae4c;
-    }
-
-    select {
-        background-color: #f9f9f9;
-    }
-</style>
 <body>
 
     <form>
@@ -92,7 +19,7 @@
         <input type="email" id="email" placeholder="Email" required> <br>
 
         <div class="gender-group">
-            <label>Gender:</label>
+            <label>Gender</label>
             <input type="radio" id="male" name="gender" value="male" required>
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female" required>
